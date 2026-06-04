@@ -103,6 +103,13 @@ Part of the **SuperInstance** ternary computing ecosystem:
 - [`ternary-constraint`](https://crates.io/crates/ternary-constraint) — constraint satisfaction for ternary variables
 - [`ternary-sensor`](https://crates.io/crates/ternary-sensor) — sensor classification and fusion
 
+## Known Limitations
+
+- **Fixed 3×3 grid**: Positions are restricted to `Trit` values in each dimension, yielding only 9 possible positions. Real swarm problems need larger grids or continuous space.
+- **No convergence guarantees**: PSO step() picks random neighbor offsets — there is no mathematical guarantee that particles converge to a global optimum.
+- **Velocity is ternary**: Each velocity component is a single trit (-1/0/+1), severely limiting movement expressiveness. Velocity cannot represent momentum or acceleration magnitude.
+- **Small state space**: With only 9 positions and 9 velocities, the entire state space is 81 states per particle. Complex optimization landscapes are poorly represented.
+
 ## License
 
 MIT
