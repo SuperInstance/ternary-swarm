@@ -113,3 +113,11 @@ Part of the **SuperInstance** ternary computing ecosystem:
 ## License
 
 MIT
+
+## See Also
+- **ternary-ga** — related
+- **ternary-fitness** — related
+- **ternary-sync** — related
+- **ternary-mesh** — related
+- **ternary-consensus** — related
+
